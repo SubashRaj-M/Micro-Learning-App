@@ -1,0 +1,17 @@
+# Backend (Java/Spring Boot)
+target/
+.mvn/
+mvnw
+mvnw.cmd
+.idea/
+*.class
+*.log
+.settings/
+.classpath
+.project
+
+# Frontend (React/Node)
+node_modules/
+build/
+.env
+.DS_Store
