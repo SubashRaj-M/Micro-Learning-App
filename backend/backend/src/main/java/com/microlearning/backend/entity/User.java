@@ -10,8 +10,8 @@ import lombok.Data;
 
 @Entity
 @Table(name = "users")
-@Data // This generates Getters/Setters automatically. 
-      // If Lombok is still giving you trouble, you can write them manually below.
+@Data 
+
 public class User {
 
     @Id
@@ -24,11 +24,11 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    // CHANGED: Use String instead of Enum to match AuthController logic
+   
     @Column(nullable = false)
     private String role; 
 
-    // --- MANUAL GETTERS/SETTERS (Only needed if @Data isn't working) ---
+    
     
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
